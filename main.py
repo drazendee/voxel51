@@ -5,7 +5,7 @@ from fiftyone import ViewField as F
 
 dataset = foz.load_zoo_dataset("quickstart")
 
-session = fo.launch_app(dataset, address='127.0.0.1')
+session = fo.launch_app(dataset, address='https://35.195.199.5')
 
 session.show()
 
