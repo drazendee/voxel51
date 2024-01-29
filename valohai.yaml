@@ -1,5 +1,5 @@
 - step:
-    image: python:3.9
+    image: voxel51/fiftyone
     name: voxel
     command:
       - pip install valohai-utils
@@ -9,7 +9,7 @@
 
 
 - endpoint:
-    image: python:3.9
+    image: voxel51/fiftyone
     name: voxel51
     description: display voxel51 dashboard
     server-command: python main.py --host 0.0.0.0 --port 5151
