@@ -1,4 +1,5 @@
 - step:
+    environment: staging-aws-eu-west-1-t3-medium
     image: voxel51/fiftyone
     name: voxel
     command:
