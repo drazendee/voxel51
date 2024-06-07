@@ -1,5 +1,5 @@
 - step:
-    environment: staging-aws-eu-west-1-t3-medium
+    environment: azure-westeurope-f2sv2
     image: voxel51/fiftyone
     name: voxel
     command:
@@ -13,4 +13,4 @@
     image: voxel51/fiftyone
     name: voxel51
     description: display voxel51 dashboard
-    server-command: python main.py --host 0.0.0.0 --port 5151
+    server-command: python main.py --host 127.0.0.1 --port 5151
