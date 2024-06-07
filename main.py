@@ -2,14 +2,16 @@ import fiftyone as fo
 import fiftyone.zoo as foz
 from fiftyone import ViewField as F
 
-
+# Load dataset
 dataset = foz.load_zoo_dataset("quickstart")
 
-session = fo.launch_app(dataset, address='0.0.0.0', remote=True)
+# Launch the FiftyOne app
+session = fo.launch_app(dataset, address='0.0.0.0', port=5151, remote=True)
 
+# Show the session
 session.show()
 
-
+# Update the session view
 session.view = (
     dataset
     .sort_by("uniqueness", reverse=True)
