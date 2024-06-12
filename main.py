@@ -5,6 +5,8 @@ from fiftyone import ViewField as F
 # Load dataset
 dataset = foz.load_zoo_dataset("quickstart")
 
+fo.config.dataset_zoo_dir = "/tmp/zoo/"
+
 # Launch the FiftyOne app
 session = fo.launch_app(dataset, address='0.0.0.0', port=5151, remote=True)
 
