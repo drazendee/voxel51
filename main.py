@@ -1,10 +1,11 @@
 import os
+import time
 
-# Set environment variables before importing FiftyOne
-os.environ["FIFTYONE_DATABASE_DIR"] = "/tmp/db/"
-os.environ["FIFTYONE_DEFAULT_DATASET_DIR"] = "/tmp/db/"
-os.environ["FIFTYONE_DATASET_ZOO_DIR"] = "/tmp/db_zoo/"
-os.environ["FIFTYONE_MODEL_ZOO_DIR"] = "/tmp/zoo_model/"
+# # Set environment variables before importing FiftyOne
+# os.environ["FIFTYONE_DATABASE_DIR"] = "/tmp/db/"
+# os.environ["FIFTYONE_DEFAULT_DATASET_DIR"] = "/tmp/db/"
+# os.environ["FIFTYONE_DATASET_ZOO_DIR"] = "/tmp/db_zoo/"
+# os.environ["FIFTYONE_MODEL_ZOO_DIR"] = "/tmp/zoo_model/"
 
 import fiftyone as fo
 import fiftyone.zoo as foz
@@ -32,3 +33,5 @@ session.view = (
     .limit(25)
     .filter_labels("predictions", F("confidence") > 0.5)
 )
+while True:
+    time.sleep(10)
