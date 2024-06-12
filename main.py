@@ -2,7 +2,7 @@ import fiftyone as fo
 import fiftyone.zoo as foz
 from fiftyone import ViewField as F
 
-fo.config.database_dir = "/tmp/db"
+fo.config.database_dir = "/tmp/zoo/db"
 fo.config.dataset_zoo_dir = "/tmp/zoo/"
 
 # Load dataset
