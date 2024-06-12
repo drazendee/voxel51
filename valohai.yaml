@@ -20,6 +20,5 @@
       export FIFTYONE_DATASET_ZOO_DIR=/tmp/zoo && \
       export FIFTYONE_MODEL_ZOO_DIR=/tmp/zoo_model && \
       python main.py --host 0.0.0.0
-      port: 5151
     port: 5151
 
