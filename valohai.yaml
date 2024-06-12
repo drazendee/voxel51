@@ -13,6 +13,6 @@
     image: voxel51/fiftyone
     name: voxel51
     description: display voxel51 dashboard
-    server-command: mkdir -p /tmp/zoo && mkdir -p /tmp/zoo/db && mkdir -p /tmp/zoo_model && python main.py --host 0.0.0.0
+    server-command: mkdir -p /tmp/zoo && mkdir -p /tmp/db && mkdir -p /tmp/zoo_model && python main.py --host 0.0.0.0
     port: 5151
 
