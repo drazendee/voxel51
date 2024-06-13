@@ -21,7 +21,7 @@ fo.config.model_zoo_dir = os.environ["FIFTYONE_MODEL_ZOO_DIR"]
 dataset = foz.load_zoo_dataset("quickstart")
 
 # Launch the FiftyOne app
-session = fo.launch_app(dataset, address='0.0.0.0', port=5151, remote=True)
+session = fo.launch_app(dataset, port=5151, remote=True)
 
 # Show the session
 session.show()
