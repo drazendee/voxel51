@@ -11,10 +11,12 @@ import fiftyone as fo
 import fiftyone.zoo as foz
 from fiftyone import ViewField as F
 
+import os
+
 print("PATH INFO")
-print(environ["PATH_INFO"])
+print(os.environ["PATH_INFO"])
 print("HTTP PREFIX")
-print(environ.get("HTTP_X_VH_PREFIX"))
+print(os.environ.get("HTTP_X_VH_PREFIX"))
 print("DEFAULT PREFIX")
 print(os.environ.get("VH_DEFAULT_PREFIX"))
 
