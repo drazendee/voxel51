@@ -15,7 +15,7 @@
     description: display voxel51 dashboard
     server-command: |
       mkdir -p /tmp/zoo && mkdir -p /tmp/db && mkdir -p /tmp/zoo_model && \
-      export FIFTYONE_APP_PROXY_URL=https://valohai.cloud/drazistan/voxel51/voxel-test/20240615.3/voxel51 \
+      export FIFTYONE_APP_PROXY_URL=https://valohai.cloud$VH_DEFAULT_PREFIX/ \
       export FIFTYONE_DATABASE_DIR=/tmp/db && \
       export FIFTYONE_DEFAULT_DATASET_DIR=/tmp/db && \
       export FIFTYONE_DATASET_ZOO_DIR=/tmp/zoo && \
