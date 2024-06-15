@@ -13,8 +13,6 @@ from fiftyone import ViewField as F
 
 import os
 
-print("PATH INFO")
-print(os.environ["PATH_INFO"])
 print("HTTP PREFIX")
 print(os.environ.get("HTTP_X_VH_PREFIX"))
 print("DEFAULT PREFIX")
