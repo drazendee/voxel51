@@ -11,6 +11,13 @@ import fiftyone as fo
 import fiftyone.zoo as foz
 from fiftyone import ViewField as F
 
+print("PATH INFO")
+print(environ["PATH_INFO"])
+print("HTTP PREFIX")
+print(environ.get("HTTP_X_VH_PREFIX"))
+print("DEFAULT PREFIX")
+print(os.environ.get("VH_DEFAULT_PREFIX"))
+
 # Ensure FiftyOne reads the configurations from the environment variables
 fo.config.database_dir = os.environ["FIFTYONE_DATABASE_DIR"]
 fo.config.default_dataset_dir = os.environ["FIFTYONE_DEFAULT_DATASET_DIR"]
